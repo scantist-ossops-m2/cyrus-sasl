@@ -197,7 +197,7 @@ int _sasl_add_string(char **out, size_t *alloclen,
     return SASL_NOMEM;
 
   strncpy(*out + *outlen, add, addlen);
-  *outlen += addlen;
+  *outlen += addlen-1;
 
   return SASL_OK;
 }
